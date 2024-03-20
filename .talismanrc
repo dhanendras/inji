@@ -59,8 +59,8 @@ fileignoreconfig:
     checksum: 6d22bc5c77398316b943c512c208ce0846a9fff674c1ccac79e07f21962acd5f
   - filename: machines/VCItemMachine/ExistingMosipVCItem/ExistingMosipVCItemMachine.typegen.ts
     checksum: 10889302ca05646a283386be1bbe7a5fb510c02bb62a308ee45f3c2a872ae64e
-  - filename: .env
-    checksum: 28d58e4ec1e8a6e0ae4835468e4f7bc9de380c92b205101226587389c942d219
   - filename: injitest/target/classes/TestData.json
     checksum: 8062e71f079e52a591e9aa99afb3bc3d3c5ea238134608097db65f38b6cc401c
+  - filename: .env
+    checksum: d74f34fc71daa2c7cdcbc2fab556b4529715a82890abfd1ec97edee8d6c51f75
 version: ""
