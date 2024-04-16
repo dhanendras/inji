@@ -526,6 +526,10 @@ export const IssuersMachine = model.createMachine(
         return credential;
       },
       invokeAuthorization: async context => {
+        console.log(
+          '=============context.selectedIssuer.credential_issuer',
+          context.selectedIssuer.credential_issuer,
+        );
         sendImpressionEvent(
           getImpressionEventData(
             'VC Download',

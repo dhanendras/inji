@@ -57,6 +57,7 @@ export const IssuersScreen: React.FC<
   ]);
 
   const onPressHandler = (id: string, protocol: string) => {
+    console.log('====', id, protocol);
     sendStartEvent(getStartEventData('VC Download', {id: id}));
     sendInteractEvent(
       getInteractEventData('VC Download', 'CLICK', `IssuerType: ${id}`),

@@ -24,6 +24,7 @@ export async function request(
   },
   timeoutMillis?: undefined | number,
 ) {
+  console.log('====request===', host, path, method, body);
   if (path.includes('residentmobileapp'))
     headers['X-AppId'] = __AppId.getValue();
   let response;

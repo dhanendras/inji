@@ -66,6 +66,11 @@ export const API_URLS: ApiUrls = {
 
 export const API = {
   fetchIssuers: async () => {
+    console.log(
+      'fetchIssuers',
+      API_URLS.issuersList.method,
+      API_URLS.issuersList.buildURL(),
+    );
     const response = await request(
       API_URLS.issuersList.method,
       API_URLS.issuersList.buildURL(),
@@ -74,6 +79,12 @@ export const API = {
   },
 
   fetchIssuerConfig: async (issuerId: string) => {
+    console.log(
+      'fetchIssuerConfig',
+      API_URLS.issuersList.method,
+      API_URLS.issuersList.buildURL(issuerId),
+    );
+
     const response = await request(
       API_URLS.issuerConfig.method,
       API_URLS.issuerConfig.buildURL(issuerId),
